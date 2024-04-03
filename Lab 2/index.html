@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Minhas Tarefas</title>
+</head>
+<body>
+    <header>
+        <h1>Minhas Tarefas</h1>
+    </header>
+    <nav>
+        <a href="perfil.html">Gerir Perfil</a>
+    </nav>
+    <section id="perfil">
+        <div class="container">
+            <div class="profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW8Vme4a1LPokR-t5NoZj0lGjvqCMEVDKZSMmcZQ3ahg&s" alt="Imagem do Usuário">
+                <h2>Olá Nuno!</h2>
+            </div>
+        </div>
+    </section>
+    <section id="tarefas">
+        <div class="container">
+            <div class="tasks">
+                <h2>Tarefas</h2>
+                <div class="add-task-form">
+                    <form>
+                        <input type="text" id="task-name" name="task-name" placeholder="Nome da Tarefa">
+                        <input type="date" id="task-date" name="task-date">
+                        <input type="submit" value="Adicionar Tarefa">
+                    </form>
+                </div>
+                <div class="task">
+                    <input type="checkbox" checked>
+                    <span>Lab 1</span>
+                    <span>01/01/2024</span>
+                    <a href="editar_tarefa.html">Editar</a>
+                </div>
+                <div class="task">
+                    <input type="checkbox">
+                    <span>Lab 2</span>
+                    <span>02/01/2024</span>
+                    <a href="editar_tarefa.html">Editar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
