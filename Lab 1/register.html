@@ -3,62 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <button><a class="button" href="index.html"><div>Back</div></a></button>
-    <div class="page">
-        <form method="post" action=""> 
-          <h1>Register</h1> 
-           
-          <p> 
-            <label for="nome">Name</label>
-            <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
-          </p>
-
-          <p> 
-            <label for="apelido">Surname</label>
-            <input id="apelido" name="apelido" required="required" type="text" placeholder="apelido" />
-          </p>
-
-          <p> 
-            <label for="morada">Adress</label>
-            <input id="morada" name="morada" required="required" type="text" placeholder="morada" />
-          </p>
-           
-          <p> 
-            <label for="email">E-mail</label>
-            <input id="email" name="email" required="required" type="email" placeholder="nome@gmail.com"/> 
-          </p>
-           
-          <p> 
-            <label for="password">Password</label>
-            <input id="password" name="password" required="required" type="password" placeholder="ex. 1234"/>
-          </p>
-          <p> 
-            <label for="password">Confirm your Password</label>
-            <input id="password" name="password" required="required" type="password" placeholder="ex. 1234"/>
-          </p>
-
-          <p> 
-            <label for="my-checkbox">
-                <input type="checkbox" id="my-checkbox">
-                <span class="checkbox"></span>
-                <a class="link">I agree to the Terms of Use and Privacy Policy</a>
-            </label>
-          </p>
-           
-          <p> 
-            <input type="submit" value="Register"/> 
-            <a class="link">Learn More</a>
-          </p>
-           
-          <p class="link">  
-            U have account?
-            <a href="login.html"> Go to Login </a>
-          </p>
+    <div class="container mt-3">
+        <a href="index.html" class="btn btn-secondary">Back</a>
+    </div>
+    <div class="container page mt-5">
+        <form method="post" action="" class="formRegister">
+            <h1 class="text-center">Register</h1>
+            <div class="form-group">
+                <label for="nome">Name</label>
+                <input id="nome" name="nome" required="required" type="text" class="form-control" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <label for="apelido">Surname</label>
+                <input id="apelido" name="apelido" required="required" type="text" class="form-control" placeholder="Apelido">
+            </div>
+            <div class="form-group">
+                <label for="morada">Address</label>
+                <input id="morada" name="morada" required="required" type="text" class="form-control" placeholder="Morada">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" required="required" type="email" class="form-control" placeholder="nome@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" required="required" type="password" class="form-control" placeholder="ex. 1234">
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm your Password</label>
+                <input id="confirm_password" name="confirm_password" required="required" type="password" class="form-control" placeholder="ex. 1234">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="my-checkbox">
+                <label class="form-check-label" for="my-checkbox">I agree to the Terms of Use and Privacy Policy</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <p class="text-center">
+                <a href="#" class="link">Learn More</a>
+            </p>
+            <p class="text-center">Already have an account? <a href="login.html">Go to Login</a></p>
         </form>
-      </div>
+    </div>
 </body>
 </html>
